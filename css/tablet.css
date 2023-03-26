@@ -1,8 +1,18 @@
 /* ===== header ===== */
+@media screen and (max-width: 767px) {
+    .menu-header {
+        display: none;
+    }
+
+    .header-contact {
+        display: none;
+    }
+
+}
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
     }
 
     .logo {
@@ -41,14 +51,12 @@
 
     }
 
-
     .menu-contact {
         font-size: 12px;
         line-height: 1.33;
         letter-spacing: 0.04em;
         color: var(--color-adress-p);
         font-style: normal;
-
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -87,6 +95,10 @@
         border-bottom: 1px solid var(--color-footer-text);
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
+
+    .mobile-menu-open {
+        display: none;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1199px) {
@@ -111,12 +123,57 @@
         margin-bottom: 40px;
         max-width: 496px;
     }
+
+
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and(min-resolution: 192dpi) and (min-width: 768px),
-screen and(min-resolution: 2dppx) and (min-width: 768px) {
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
-        background-image: url('../images/hero/hero-tablet@2x.jpg');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/hero-tablet@2x.jpg');
     }
+}
+
+
+/* ========== Feature Section ==========*/
+@media screen and (min-width: 768px) {
+    .feature-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .feature-title {
+        text-align: left;
+    }
+
+    .feature-item:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
+
+    .feature-item:nth-child(2n-1) {
+        margin-right: 24px;
+    }
+
+    .feature-item {
+        width: calc((100% - 24px) /2);
+    }
+}
+
+/* ===== /Feature Section =====*/
+
+/* ===== Team Section =====*/
+
+@media screen and (min-width: 768px) {
+    .team {
+        padding-bottom: 104px;
+    }
+
+    .team .list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
 }
