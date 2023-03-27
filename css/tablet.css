@@ -136,8 +136,8 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
 }
 
-
 /* ========== Feature Section ==========*/
+
 @media screen and (min-width: 768px) {
     .feature-list {
         display: flex;
@@ -170,10 +170,67 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         padding-bottom: 104px;
     }
 
-    .team .list {
+    .team-list {
         display: flex;
         flex-wrap: wrap;
+        gap: 64px 24px;
+        justify-content: center;
+    }
+}
+
+/* ===== /Team Section =====*/
+
+/* ===== Customers ===== */
+
+@media screen and (min-width: 768px) {
+    .cust-list {
+        gap: 72px 24px;
+    }
+
+    .cust-link {
+        width: 168px;
+        height: 88px;
+    }
+}
+
+/* ===== /Customers ===== */
+
+/* ===== Footer =====*/
+
+@media screen and (min-width: 768px) {
+    .foot-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-mail-box {
+        display: flex;
         gap: 24px;
     }
 
+    .footer-text {
+        max-width: 264px;
+    }
+
+    .foot-soc-block {
+        margin-left: 24px;
+    }
+
+    .footer-f-input {
+        width: 264px;
+    }
+
+    .modal {
+        width: 408px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-form {
+        margin-top: 72px;
+    }
+
+    .foot-info {
+        width: 565px;
+    }
 }

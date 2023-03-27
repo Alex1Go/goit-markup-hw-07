@@ -116,7 +116,38 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         padding-bottom: 120px;
     }
 
-    .team .list {
+    .team-list {
         gap: 24px;
+    }
+}
+
+/* ===== /Team Section =====*/
+
+/* ===== Customers ===== */
+
+@media screen and (min-width: 1200px) {
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+/* ===== /Customers ===== */
+
+/* ===== Footer =====*/
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        background-color: var(--color-menu-h);
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .foot-soc-block {
+        margin-left: 120px;
+    }
+
+    .footer-form {
+        margin-left: auto;
     }
 }
