@@ -231,3 +231,29 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         width: 565px;
     }
 }
+
+/* ===== Portfolio ===== */
+
+@media screen and (min-width: 768px) {
+    .menu-filter {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .list-btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    .menu-filter-btn {
+        padding: 12px 24px;
+    }
+
+    .list-img {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+}

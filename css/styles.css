@@ -106,6 +106,12 @@ body {
     left: 0;
     z-index: 1000;
     background-color: var(--primary-fon-color);
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
 }
 
 .mobile-container {
@@ -646,15 +652,18 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 /* ===== PORTFOLIO PAGE ===== */
 .menu-filter {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding: 48px 0;
 }
 
 .list-btn {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 72px;
+}
+
+@media screen and (max-width: 767px) {
+    .filter-item:nth-child(-n + 3) {
+        margin-bottom: 16px;
+    }
 }
 
 .filter-item:not(:last-child) {
@@ -673,7 +682,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-color: var(--color-back-fonteam-logo2-pmenubtn);
     border-radius: 4px;
     border: 1px solid var(--color-footer-text);
-    padding: 12px 24px;
+    padding: 8px 24px;
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -688,11 +697,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     border-color: transparent;
 }
 
-.list-img {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+.list-item {
+    margin-top: 48px;
 }
 
 .list-item .link {
@@ -713,15 +719,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     height: auto;
 }
 
-.list-item {
-    width: calc((100% - 48px) /3);
-
-}
-
-.list-item:nth-last-child(-n+3) {
-    margin-bottom: 0;
-}
-
 .img-text {
     padding: 32px 16px;
     border: 1px solid var(--color-footer-text);
@@ -729,11 +726,10 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     margin-right: 0;
 }
 
-
 .menu-filter-subtitle {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-menu-h);
     margin-bottom: 8px;
