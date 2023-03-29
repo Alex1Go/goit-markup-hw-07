@@ -102,16 +102,29 @@
     .contact-item:not(:last-child) {
         margin-bottom: 4px;
     }
-
 }
 
 /* ===== hero ===== */
+@media screen and (min-width:429px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/hero-tablet.jpg');
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 429px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 429px),
+screen and (min-resolution: 192dpi) and (min-width: 429px),
+screen and (min-resolution: 2dppx) and (min-width: 429px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/hero-tablet@2x.jpg');
+    }
+}
 
 @media screen and (min-width: 768px) {
     .hero {
         padding-top: 111px;
         padding-bottom: 108px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/hero-tablet.jpg');
+
     }
 
     .hero-title {
@@ -119,17 +132,6 @@
         line-height: 1.07;
         margin-bottom: 40px;
         max-width: 496px;
-    }
-
-
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/hero-tablet@2x.jpg');
     }
 }
 

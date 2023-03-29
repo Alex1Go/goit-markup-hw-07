@@ -235,10 +235,10 @@ body {
     background-size: cover;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 428px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 428px),
+screen and (min-resolution: 192dpi) and (max-width: 428px),
+screen and (min-resolution: 2dppx) and (max-width: 428px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/hero-mobile@2x.jpg');
     }
@@ -514,6 +514,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     color: var(--color-footer-text);
     max-width: 268px;
     margin-top: 16px;
+    text-align: left;
 }
 
 @media screen and (max-width: 767px) {
@@ -789,6 +790,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 .modal {
     position: absolute;
     width: 90%;
+    max-width: 392px;
     top: 50%;
     left: 50%;
     padding: 72px 24px 24px 24px;
@@ -957,7 +959,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     letter-spacing: 0.04em;
     color: #757575;
     margin-bottom: 24px;
-    align-items: center;
+    flex-shrink: 0;
 }
 
 .checkbox-text a {
